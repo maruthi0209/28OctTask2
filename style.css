@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body::before {
+/* body::before {
     content: " ";
     display: block;
     width: 100px;
@@ -16,9 +16,53 @@ body::before {
     border: 10px solid white;
     border-radius: 50%;
     z-index: 1;
+} */
+.circle {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 40%;
+    top:20%;
+    border: 10px solid white;
+    border-radius: 50%;
+    z-index: 1;
+    /* border-bottom-left-radius: 20%; */
+}
+.circle::before {
+    width: 0%;
+    height: 0%;
+    position: relative;
+    top: 91% ;
+    left: -16%;
+    content: "";
+    /* background-color: yellow; */
+    /* background-color: white; */
+    /* border-bottom-left-radius: 40%; */
+    border-top: 10px solid white;
+    border-left: 16px solid green;
+    border-right: none;
+    border-bottom: none;
 }
 
-body::after {
+.circle::after {
+    width: 0%;
+    height: 0%;
+    position: relative;
+    top: 91% ;
+    left: 77%;
+    content: "";
+    /* background-color: yellow; */
+    /* background-color: white; */
+    /* border-bottom-left-radius: 40%; */
+    border-top: 10px solid white;
+    border-right: 12px solid green;
+    border-bottom: none;
+    border-left: none;
+}
+
+/* body::after {
     content: " ";
     display: block;
     width: 500px;
@@ -27,4 +71,15 @@ body::after {
     top:30%;
     left:27%;
     background-color: green;
+} */
+
+.rectangle{
+    display: block;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top:30%;
+    left:27%;
+    background-color: green;
 }
+
